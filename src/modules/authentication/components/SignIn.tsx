@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { z } from "zod";
 import InputField from "../../../ui/InputField";
 import Label from "../../../ui/Label";
-import SubmitButton from "../../../ui/SubmitButton";
+import ButtonField from "../../../ui/ButtonField";
 
 const signInSchema = z.object({
   email: z.string().min(1, "Email is required").email("Invalid email format"),
@@ -57,7 +57,7 @@ const SignIn = () => {
         </div>
 
         <div>
-          <SubmitButton label="Sign In" loading={false} />
+          <ButtonField label="Sign In" htmlType="submit" type="primary" loading={false} />
         </div>
       </form>
       <div className="mt-4 text-center space-y-2">

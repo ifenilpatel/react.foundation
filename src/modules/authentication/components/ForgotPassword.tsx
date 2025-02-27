@@ -2,9 +2,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import { z } from "zod";
+import ButtonField from "../../../ui/ButtonField";
 import InputField from "../../../ui/InputField";
 import Label from "../../../ui/Label";
-import SubmitButton from "../../../ui/SubmitButton";
 
 const forgotPasswordSchema = z.object({
   email: z.string().min(1, "Email is required").email("Invalid email format"),
@@ -47,7 +47,7 @@ const ForgotPassword = () => {
         </div>
 
         <div>
-          <SubmitButton label="Reset Password" loading={false} />
+          <ButtonField label="Reset Password" htmlType="submit" type="primary" loading={false} />
         </div>
       </form>
 

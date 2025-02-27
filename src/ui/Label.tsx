@@ -9,7 +9,7 @@ interface LabelProps {
 
 const Label: React.FC<LabelProps> = ({ htmlFor, children, required = false, className = "" }) => {
   return (
-    <label htmlFor={htmlFor} className={`block text-sm font-medium text-gray-700 ${className}`}>
+    <label htmlFor={htmlFor} className={`block mb-1 text-sm font-medium text-gray-700 ${className}`}>
       {children}
       {required && <span className="text-red-500"> *</span>}
     </label>

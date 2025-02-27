@@ -3,9 +3,9 @@ import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { z } from "zod";
+import ButtonField from "../../../ui/ButtonField";
 import InputField from "../../../ui/InputField";
 import Label from "../../../ui/Label";
-import SubmitButton from "../../../ui/SubmitButton";
 
 const changePasswordSchema = z
   .object({
@@ -73,7 +73,7 @@ const ChangePassword = () => {
         </div>
 
         <div>
-          <SubmitButton label="Change Password" loading={false} />
+          <ButtonField label="Change Password" htmlType="submit" type="primary" loading={false} />
         </div>
       </form>
 

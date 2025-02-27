@@ -2,9 +2,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import { z } from "zod";
+import ButtonField from "../../../ui/ButtonField";
 import InputField from "../../../ui/InputField";
 import Label from "../../../ui/Label";
-import SubmitButton from "../../../ui/SubmitButton";
 
 const registerSchema = z.object({
   firstName: z.string().min(1, "First name is required"),
@@ -79,7 +79,7 @@ const Register = () => {
         </div>
 
         <div>
-          <SubmitButton label="Sign Up" loading={false} />
+          <ButtonField label="Sign Up" htmlType="submit" type="primary" loading={false} />
         </div>
       </form>
 

@@ -21,7 +21,7 @@ const Backoffice = () => {
       {isSidebarOpen && window.innerWidth < 768 && <div className="fixed inset-0 bg-opacity-50 z-40" onClick={() => setIsSidebarOpen(false)}></div>}
       <div className="flex flex-1 overflow-hidden">
         {isSidebarOpen && <Sidebar closeSidebar={() => setIsSidebarOpen(false)} />}
-        <main className="flex-1 p-4 overflow-y-auto h-full">
+        <main className="bg-gray-200 flex-1 p-4 overflow-y-auto h-full">
           <Outlet />
         </main>
       </div>
