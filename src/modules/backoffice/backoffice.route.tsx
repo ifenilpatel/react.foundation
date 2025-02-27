@@ -6,6 +6,9 @@ import Dashboard from "./components/Dashboard";
 import Users from "./components/Users";
 import Settings from "./components/Settings";
 import Reports from "./components/Reports";
+import Profile from "./components/Profile";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsOfService from "./components/TermsOfService";
 
 const backofficeRoutes = [
   {
@@ -17,6 +20,9 @@ const backofficeRoutes = [
       { path: "users", element: <Users /> },
       { path: "settings", element: <Settings /> },
       { path: "reports", element: <Reports /> },
+      { path: "profile", element: <Profile /> },
+      { path: "privacy", element: <PrivacyPolicy /> },
+      { path: "terms", element: <TermsOfService /> },
     ],
   },
 ];

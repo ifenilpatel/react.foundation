@@ -19,9 +19,9 @@ const Backoffice = () => {
     <div className="h-screen flex flex-col">
       <Header toggleSidebar={() => setIsSidebarOpen((prev) => !prev)} />
       {isSidebarOpen && window.innerWidth < 768 && <div className="fixed inset-0 bg-opacity-50 z-40" onClick={() => setIsSidebarOpen(false)}></div>}
-      <div className="flex flex-1">
+      <div className="flex flex-1 overflow-hidden">
         {isSidebarOpen && <Sidebar closeSidebar={() => setIsSidebarOpen(false)} />}
-        <main className="flex-1 p-4 transition-all duration-300">
+        <main className="flex-1 p-4 overflow-y-auto h-full">
           <Outlet />
         </main>
       </div>
