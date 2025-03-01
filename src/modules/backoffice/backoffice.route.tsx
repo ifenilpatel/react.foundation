@@ -4,7 +4,7 @@ import Backoffice from "./backoffice";
 // components
 import Dashboard from "./components/Dashboard";
 import Users from "./components/Users";
-import Settings from "./components/Settings";
+import Settings from "./components/setting/Settings";
 import Reports from "./components/Reports";
 import Profile from "./components/Profile";
 import PrivacyPolicy from "./components/PrivacyPolicy";
